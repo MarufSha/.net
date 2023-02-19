@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+
+<table class="table table-bordered">
+    <tr>
+       
+        <th>Name</th>
+        <th>Price</th>
+        
+  
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+           
+            <td>@b.Name</td>
+            <td>@b.Price</td>
+            
+
+        </tr>
+    }
+</table>
+
+
+<cener><a href="/product/confirm" class="btn btn-success">Confirm</a></cener>
+
